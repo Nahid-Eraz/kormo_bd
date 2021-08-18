@@ -1,0 +1,19 @@
+.header-container {
+    height:750px;
+    position:relative;
+}
+/* .header-container::after{
+    height:750px;
+    content:' ';
+    position: absolute;
+    top: 0;
+    width: 33%;
+    right: 0;
+    background-color: #ff008010;
+    z-index: -50;
+} */
+
+.navbar{
+    transition: all;
+}
+

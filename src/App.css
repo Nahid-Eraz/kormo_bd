@@ -3,22 +3,21 @@
 p{
   line-height:2;
   font-size: 1rem;
-  
 }
 
 /* button */
 .btn {
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 .btn-main{
-  color: white;
-  border: none;
+  color: white !important;
+  border: none !important;
   border-radius: 22px;
-  background-color: rgb(231, 56, 143);
+  background-color: #e7388f !important;
   padding: 15px;
 }
 
 .btn-main:hover{
-  background-color: rgb(197, 48, 123);
+  background-color: #c5307b !important;
 }
