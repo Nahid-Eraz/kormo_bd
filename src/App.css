@@ -13,9 +13,9 @@ p{
 .btn-main{
   color: white !important;
   border: none !important;
-  border-radius: 22px;
+  border-radius: 15px;
   background-color: #e7388f !important;
-  padding: 15px;
+  padding: 12px;
 }
 
 .btn-main:hover{
