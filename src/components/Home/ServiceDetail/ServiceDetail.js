@@ -7,7 +7,7 @@ const ServiceDetail = ({ service }) => {
 
 
     return (
-        <Col md={4} className="text-center">
+        <Col md={3} className="text-center">
             <Fade bottom>
                 <Card className="border-0 py-4" style={{ width: '18rem' }}>
                     <Card.Img style={{ height: '100px', width: '100px', marginLeft: '93px' }}variant="top" src={service.img} />
