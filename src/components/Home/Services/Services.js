@@ -6,7 +6,7 @@ import AcWash from '../../../images/service image/ac-repair.png';
 import RoomClean from '../../../images/service image/room-clean.png';
 import ClothWash from '../../../images/service image/washing-clothes.png';
 import ServiceDetail from '../ServiceDetail/ServiceDetail';
-import './Services.css'
+import './Services.css';
 const serviceData = [
     {
         name: 'Ac Repair',
@@ -26,12 +26,24 @@ const serviceData = [
         description: 'sadfsadfjksadjkfhjsakdhfkjsadhfksadsadsadasdsadasdagfdsafafjh',
         price: '50'
     },
+    {
+        name: 'Room Clean',
+        img: RoomClean,
+        description: 'sadfsadfjksadjkfhjsakdhfkjsadhfksadsadsadasdsadasdagfdsafafjh',
+        price: '200'
+    },
+    {
+        name: 'Ac Repair',
+        img: AcWash,
+        description: 'sadfsadfjksadjkfhjsakdhfkjsadhfksadsadsadasdsadasdagfdsafafjh',
+        price: '100'
+    },
 ]
 
 
 const Services = () => {
 
-
+    
     const [services, setServices] = useState([]);
 
     useEffect(() => {

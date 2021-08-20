@@ -13,9 +13,10 @@ p{
 .btn-main{
   color: white !important;
   border: none !important;
-  border-radius: 15px;
   background-color: #e7388f !important;
-  padding: 12px;
+  font-size: 1rem;
+  padding: 0.7rem 2rem;
+  border-radius: 50px;
 }
 
 .btn-main:hover{
