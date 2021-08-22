@@ -1,11 +1,14 @@
+// import axios from 'axios';
 import React, { useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import { useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
+// import toast, { Toaster } from 'react-hot-toast';
 import AcWash from '../../../images/service image/ac-repair.png';
 import RoomClean from '../../../images/service image/room-clean.png';
 import ClothWash from '../../../images/service image/washing-clothes.png';
 import ServiceDetail from '../ServiceDetail/ServiceDetail';
+import OverflowScrolling from 'react-overflow-scrolling';
 import './Services.css';
 const serviceData = [
     {
@@ -37,13 +40,13 @@ const serviceData = [
         img: AcWash,
         description: 'sadfsadfjksadjkfhjsakdhfkjsadhfksadsadsadasdsadasdagfdsafafjh',
         price: '100'
-    },
+    }
 ]
 
 
 const Services = () => {
 
-    
+    // const [loading, setLoading] = useState(true);
     const [services, setServices] = useState([]);
 
     useEffect(() => {

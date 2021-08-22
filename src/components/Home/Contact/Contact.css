@@ -1,0 +1,79 @@
+.contact-section{
+    background-color: rgb(65, 65, 65);
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.contact-section h1{
+    font-weight: 600;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.contact-section h6{
+    font-weight: 400;
+    font-size: 20px;
+    color: #e7388f;
+    line-height: 1.5;
+}
+
+
+.contact-section input:focus ~ label, .contact-section textarea:focus ~ label, .contact-section input:valid ~ label, .contact-section textarea:valid ~ label{
+    font-size: 0.75em;
+    top: -5px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+
+.contact-section .styled-input{
+    float: left;
+    width: 295px;
+    margin: 0.75rem 0;
+    position: relative;
+    border-radius: 15px;
+}
+
+.contact-section .styled-input label{
+    color: #e7388f;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.contact-section .styled-input.wide{
+    width: 650px;
+    max-width: 100%;
+}
+
+.contact-section input, .contact-section textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 5px;
+}
+
+.contact-section input:focus, .contact-section textarea:focus{
+    outline: 0;
+}
+
+.contact-section input:focus ~ span, .contact-section textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+.contact-section textarea{
+    width: 100%;
+    min-height: 15rem;
+    margin: 20px auto 25px auto;
+}
+
