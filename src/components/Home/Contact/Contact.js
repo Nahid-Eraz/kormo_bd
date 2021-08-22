@@ -1,8 +1,9 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Image, Row } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import Fade from 'react-reveal/Fade';
 import './Contact.css';
+import ContactUs from '../../../images/contact.jpg';
 
 const Contact = () => {
 
@@ -20,48 +21,43 @@ const Contact = () => {
                         <h6>We want to hear from you!</h6>
                     </article>
 
-                    <article col md={6}>
+                    <article>
                         <form action="submit">
-                            <Row className="input-container">
+                            <Row className="input-container justify-content-center">
 
-                                <Col xs={12}>
+                                <Col md={5}>
                                     <div className="styled-input wide">
                                         <input type="text" {...register("name", { required: true })} required />
                                         <label>Name</label>
                                     </div>
-                                </Col>
 
-                                <Col xs={12}>
                                     <div className="styled-input wide">
                                         <input type="text" {...register("email", { required: true })} required />
                                         <label>Email</label>
                                     </div>
-                                </Col>
 
-                                <Col xs={12}>
                                     <div className="styled-input wide">
                                         <input type="text" {...register("phone", { required: true })} required />
                                         <label>Phone/Mobile</label>
                                     </div>
-                                </Col>
 
-                                <Col xs={12}>
                                     <div className="styled-input wide">
                                         <textarea type="text" {...register("message", { required: true })} required />
                                         <label>Message</label>
                                     </div>
+
+                                    <div>
+                                        <button className="btn-lrg submit-btn btn-main">Send Message</button>
+                                    </div>
                                 </Col>
 
-                                <Col xs={12}>
-                                    <button className="btn-lrg submit-btn btn-main">Send Message</button>
+                                <Col md={6} className="mt-3">
+                                    <Image style={{height: "86%", width: "100%"}} src={ContactUs} fluid />
                                 </Col>
+
 
                             </Row>
                         </form>
-                    </article>
-
-                    <article col md={6}>
-                        <img src="" alt="" />
                     </article>
 
                 </Container>
